@@ -1,0 +1,371 @@
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+color: #fdca40 (yellow)
+color: #e8eef2 (sky blue)
+color: #001427 */
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: #001427;
+  text-align: justify;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  font-size: 4rem;
+  font-weight: 900;
+
+}
+#title{
+  color: #FDCA40;
+  background-color: #e8eef2;
+  height: 100vh;
+  background: linear-gradient(rgba(255,255,255,.7), rgba(0,20,39,.5)), url("herobck4.jpg");
+  background-size: 100% 100%;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #001427;
+}
+.nav-item{
+  padding: 0 16px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  border-bottom: 2px solid #fdca40;
+}
+.navl{
+  margin-right: 20px;
+}
+/*heading*/
+
+.head-container{
+  padding-left: 40px;
+  padding-top: 150px;
+}
+.heading{
+  text-align: center;
+}
+.sub-heading{
+  text-align: center;
+}
+
+.title-content{
+  width:50%;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.event-details{
+  color: #FDCA40;
+  font-size: 1.5rem;
+  line-height: 1.5;
+
+}
+.ctabutton{
+  width:50%;
+  margin: auto;
+}
+
+.btn1{
+  margin-right: 25px;
+}
+/* .schedule-image{
+  padding-top: 50px;
+  width:72%;
+  margin: auto;
+  padding-bottom: 500px;
+}
+
+.event-flow{
+  width:100%;
+  height:auto;
+} */
+
+body {
+
+  /* color: #fff; */÷
+  overflow-x: hidden;
+}  /* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.intro-head{
+  font-size: 2.3rem;
+  color: #fdca40;
+}
+.intro {
+  background: #001427 ;
+  padding: 50px 0;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* arrow */
+.arrow{
+    position: absolute;
+    top: 5%;
+    right:30%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #fdca40;
+    border-right: 5px solid #fdca40;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul{
+    margin: 0;
+}
+
+.timeline ul {
+  background: #001427;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fdca40;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #fdca40;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #fdca40 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #fdca40;
+}
+
+time {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #fdca40;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+/* Section - Features */
+
+.features-icon{
+  padding-bottom: 1rem;
+  color: #fdca40;
+  font-size: 5rem;
+  transition-delay: 0.1s;
+}
+
+.features-icon:hover{
+  color: #001427;
+}
+
+#features{
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 7rem 15rem;
+}
+
+#features h3{
+  font-size: 2.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+#features p{
+  font-size: 1.5rem;
+  color: #8f8f8f;
+}
+.feat{
+  text-align: center;
+}
+
+/* SECTION - TESTIMONIALS */
+#testimonials{
+  text-align: center;
+  background-color: #e8eef2;
+  color: #001427;
+}
+
+.carousel-item{
+  padding: 10rem 15rem;
+}
+
+.testimonial-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-right: 3%;
+}
+
+.testimonial-text{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 2.5rem;
+  padding-bottom: 4rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 50px;
+  width: 50px;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 40px;
+  color: #001427;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 40px;
+  color: #001427;
+}
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1{
+
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 4rem;
+    font-weight: 600;
+
+  }
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
