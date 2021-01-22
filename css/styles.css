@@ -339,7 +339,7 @@ time {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
-
+/* 
 @media (max-width: 900px) {
   .arrow{
       position: absolute;
@@ -354,9 +354,9 @@ time {
     left: -289px;
     /*250+45-6*/
   }
-}
+} */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .arrow{
       position: absolute;
       top: 5%;
