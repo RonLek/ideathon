@@ -54,7 +54,7 @@ h1{
 /*heading*/
 
 .head-container{
-  margin-left: 10%;
+  margin-left: 8%;
   padding-top: 150px;
 }
 .heading{
@@ -346,6 +346,25 @@ time {
 
 
 @media (max-width: 1200px) {
+
+  h1{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size: 3rem;
+    font-weight: 900;
+
+  }
+  .subtitle{
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    width: 40%;
+  }
+  .title-content{
+    width: 35%;
+    font-weight: 400;
+
+  }
   .arrow{
       position: absolute;
       top: 5%;
@@ -353,11 +372,38 @@ time {
       transform: translate(-50%,-50%);
   }
   .timeline ul li div {
-    width: 250px;
+    width: 350px;
   }
   .timeline ul li:nth-child(even) div {
-    left: -289px;
+    left: -389px;
     /*250+45-6*/
+  }
+  .timeline ul li::after {
+    transition: background .5s ease-in-out;
+  }
+
+  .timeline ul li.in-view::after {
+    background: #fdca40;
+  }
+
+  .timeline ul li div {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+  }
+
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(100px, 0, 0);
+  }
+
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(-100px, 0, 0);
+  }
+
+  .timeline ul li.in-view div {
+    transform: none;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
@@ -369,7 +415,6 @@ time {
       transform: translate(-50%,-50%);
   }
   h1{
-
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
     font-size: 4rem;
