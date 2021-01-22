@@ -4,6 +4,11 @@ font-family: 'Ubuntu', sans-serif;
 color: #fdca40 (yellow)
 color: #e8eef2 (sky blue)
 color: #001427 */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 html{
   scroll-behavior: smooth;
   max-width: 100%;
