@@ -33,6 +33,7 @@ h1{
   width: 100%;
   height: auto;
   background: linear-gradient(rgba(255,255,255,.9), rgba(0,20,39,.7)), url("herobck3.jpg");
+  background-attachment: fixed;
   background-size: 100% 100%;
 }
 .navbar-light .navbar-nav .nav-link {
