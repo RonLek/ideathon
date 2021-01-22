@@ -32,7 +32,7 @@ h1{
   background-color: #e8eef2;
   width: 100%;
   height: auto;
-  background: linear-gradient(rgba(255,255,255,.9), rgba(0,20,39,.3)), url("herobck3.jpg");
+  background: linear-gradient(rgba(255,255,255,.9), rgba(0,20,39,.7)), url("herobck3.jpg");
   background-size: 100% 100%;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -322,7 +322,12 @@ time {
 .features-icon:hover{
   color: #001427;
 }
+.ticon{
+  font-size: 2rem;
+  color: #001427;
+}
 
+/* Features */
 #features{
   background-color: #fff;
   position: relative;
@@ -351,7 +356,7 @@ time {
 }
 
 .carousel-item{
-  padding: 20rem 15rem;
+  padding: 10rem 10rem;
 }
 
 .testimonial-image{
@@ -455,6 +460,13 @@ time {
     transform: none;
     visibility: visible;
     opacity: 1;
+  }
+  .testimonial-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 2rem;
+    padding-bottom: 4rem;
   }
 }
 
