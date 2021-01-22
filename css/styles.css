@@ -338,9 +338,7 @@ time {
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-
-/* 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   .arrow{
       position: absolute;
       top: 5%;
@@ -354,7 +352,7 @@ time {
     left: -289px;
     /*250+45-6*/
   }
-} */
+}
 
 @media (max-width: 900px) {
   .arrow{
