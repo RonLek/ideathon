@@ -48,9 +48,10 @@ h1{
 .navbar-light .navbar-nav .nav-link:hover {
   border-bottom: 2px solid #fdca40;
 }
-.navl{
-  margin-right: 20px;
+.ml-auto{
+  text-align: center;
 }
+
 /*heading*/
 
 .head-container{
@@ -84,6 +85,53 @@ h1{
 .btn1{
   margin-right: 25px;
 }
+
+
+/* .timer {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  line-height: 1;
+  padding-bottom: 5px;
+  font-size: 40px;
+}
+.cntdwn{
+  margin-left: 8%;
+}
+
+.time-span{
+  display: block;
+  font-size: 10px;
+  color: #001427;
+}
+
+.days {
+  font-size: 50px;
+  color: #001427;
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+}
+.hours {
+  font-size: 50px;
+  color: #001427;
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+}
+.minutes {
+  font-size: 50px;
+  color: #001427;
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+}
+.seconds {
+  color: #001427;
+  display: inline-block;
+  line-height: 1;
+  padding: 20px;
+  font-size: 20px;
+} */
 /* .schedule-image{
   padding-top: 50px;
   width:72%;
@@ -360,6 +408,9 @@ time {
     text-align: left;
     width: 40%;
   }
+  .event-details{
+    font-size: 1.2rem;
+  }
   .title-content{
     width: 35%;
     font-weight: 400;
@@ -417,7 +468,7 @@ time {
   h1{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
 
   }
