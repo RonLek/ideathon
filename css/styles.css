@@ -19,7 +19,178 @@ body{
   color: #001427;
   text-align: justify;
 }
+.preloaded .afterloaded{
+  display: none;
+}
 
+.loaded .preload{
+  display: none;
+}
+
+.loaded .afterloaded{
+  display: block;
+}
+.preload {
+  background-color: rgb(0,20,39);
+  height:100vh;
+}
+
+svg {
+  width: 100%;
+}
+
+.container1 {
+  padding-top:17%;
+  margin: auto;
+  width: 13%;
+}
+
+.st0 {
+  fill: #FDCA40;
+}
+
+.st1 {
+  fill: none;
+  stroke: #FDCA40;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: none;
+  opacity: .5;
+  stroke: #FDCA40;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+#one {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .1s infinite;
+  animation: line-glow 1s .1s infinite;
+}
+
+#two {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .2s infinite;
+  animation: line-glow 1s .2s infinite;
+}
+
+#three {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .3s infinite;
+  animation: line-glow 1s .3s infinite;
+}
+
+#four {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .4s infinite;
+  animation: line-glow 1s .4s infinite;
+}
+
+#five {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .5s infinite;
+  animation: line-glow 1s .5s infinite;
+}
+
+#six {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .6s infinite;
+  animation: line-glow 1s .6s infinite;
+}
+
+#seven {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .7s infinite;
+  animation: line-glow 1s .7s infinite;
+}
+
+#bulb-body-fill {
+  -webkit-animation: bulb-on 1s ease infinite;
+  animation: bulb-on 1s ease infinite;
+}
+
+@-webkit-keyframes line-glow {
+  10% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes line-glow {
+  10% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bulb-on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bulb-on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.animate-flicker {
+   -webkit-animation: flickerAnimation 1s infinite;
+   -moz-animation: flickerAnimation 1s infinite;
+   -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+}
+
+.main-hea{
+  padding-top: 10px;
+  text-align: center;
+  color: #fdca40;
+  font-size: 4rem;
+}
 h1{
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
@@ -38,6 +209,7 @@ h1{
 
   background-size: 100% 100%;
 }
+
 .navbar-light .navbar-nav .nav-link {
     color: #001427;
 }
@@ -88,7 +260,17 @@ h1{
 .btn1{
   margin-right: 25px;
 }
-
+@media (max-width: 1200px)  {
+  #title{
+  height: 100vh;
+}
+  .event-details{
+    font-size: 3rem;
+  }
+  .preloaded .preload{
+    padding-top: 17%;
+  }
+}
 
 /* .timer {
   font-family: 'Montserrat', sans-serif;
@@ -410,18 +592,19 @@ time {
   h1{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    font-size: 3rem;
+    font-size: 5rem;
     font-weight: 900;
 
   }
   .subtitle{
+    font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.5;
     text-align: left;
     width: 40%;
   }
   .event-details{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .title-content{
     width: 35%;
@@ -490,7 +673,6 @@ time {
   h1{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    font-size: 3rem;
     font-weight: 600;
 
   }
@@ -508,8 +690,68 @@ time {
     border-width: 8px 16px 8px 0;
     border-color: transparent #fdca40 transparent transparent;
   }
-}
+  .footer-distributed{
+    font: bold 14px;
+  }
 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+
+  #title{
+    background-attachment: scroll;
+  }
+  .preloaded .preload{
+    padding-top: 50%;
+  }
+  .arrow{
+      position: absolute;
+      top: 5%;
+      right:10%;
+      transform: translate(-50%,-50%);
+  }
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #fdca40 transparent transparent;
+  }
+  .footer-distributed{
+    font: bold 18px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+}
 
 /* Responsive footer */
 
@@ -665,27 +907,4 @@ time {
 
 	margin-right: 3px;
 	margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-	.footer-distributed{
-		font: bold 14px;
-	}
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
-
 }
