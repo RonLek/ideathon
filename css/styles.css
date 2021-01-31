@@ -1008,7 +1008,7 @@ time {
   .title-content{
     width: 40%;
     font-weight: 400;
-
+    padding-bottom: 20px;
   }
   .arrow{
       position: absolute;
