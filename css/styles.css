@@ -982,12 +982,12 @@ time {
   h1{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 900;
 
   }
   .event-details{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .head-container{
     padding-top: 120px;
@@ -996,7 +996,7 @@ time {
     padding-top: 12%;
   }
   .subtitle{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.5;
     text-align: left;
