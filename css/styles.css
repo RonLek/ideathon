@@ -195,7 +195,7 @@ h1{
   font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
   letter-spacing: 3px;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
 
 }
@@ -203,7 +203,7 @@ h1{
   color: #FDCA40;
   background-color: #e8eef2;
   width: 100%;
-  max-height: 100vh;
+  height: 100vh;
   background: linear-gradient(rgba(255,255,255,.8), rgba(0,20,39,.8)), url("herobck3.jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -230,7 +230,7 @@ h1{
 
 .head-container{
   margin-left: 8%;
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .heading{
   text-align: justify;
@@ -989,11 +989,15 @@ time {
     font-size: 1rem;
   }
   .head-container{
-    padding-top: 120px;
+    padding-top: 80px;
   }
   .preloaded .preload{
     padding-top: 12%;
   }
+.ctabutton{
+  width:50%;
+  padding-bottom: 8%;
+}
   .subtitle{
     font-size: 1.5rem;
     font-weight: 600;
