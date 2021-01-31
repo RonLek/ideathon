@@ -891,10 +891,15 @@ time {
 }
 .gold-sponsor{
   padding-top: 30px;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
 }
 .go-spons-details{
   padding-top: 50px;
+}
+.glogo{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 /* media queries */
 
