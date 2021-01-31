@@ -843,14 +843,13 @@ time {
 #sponsors{
   background-color: #e8eef2;
 }
-.sponsor-head{
-  width:100%;
+.sponsor-title{
+  padding-top: 150px;
+  text-align: center;
 }
 .sponsor-title h2 {
-  width: 50%;
-  margin: auto;
-  text-align: center;
-  color: #fdca40;
+  font-size: 3rem;
+  color: #001427;
   position: relative;
   margin-bottom: 45px;
   display: inline-block;
@@ -863,17 +862,45 @@ time {
     left: 50%;
     width: 60px;
     height: 2px;
-    background: #fdca40;
+    background: #001427;
     bottom: -25px;
     margin-left: -30px;
 }
-
-
+.sponsor-msg{
+  text-align: center;
+  font-size: 1.4rem;
+  padding-bottom: 20px;
+}
+.platinum-sponsor{
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.pl-sponsor-title{
+  text-align: center;
+}
+.pl-sponsor-title h2 {
+  font-size: 2rem;
+  color: #001427;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1;
+}
+.pl-spons-details{
+  text-align: center;
+  padding-top: 60px;
+}
+.gold-sponsor{
+  padding-top: 30px;
+  padding-bottom: 150px;
+}
+.go-spons-details{
+  padding-top: 50px;
+}
 /* media queries */
 
 @media (max-width: 767px) {
   body{
-    font-size: 0.4rem;
+    font-size: 1rem;
   }
   #title{
     background-attachment: scroll;
@@ -941,7 +968,7 @@ time {
   }
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 766px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
 
   #title{
     background-attachment: scroll;
