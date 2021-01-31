@@ -976,12 +976,12 @@ time {
 
   #title{
     background-attachment: scroll;
-    height: 100vh;
+    height: auto;
   }
   h1{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 900;
 
   }
@@ -989,17 +989,17 @@ time {
     font-size: 1rem;
   }
   .head-container{
-    padding-top: 80px;
+    padding-top: 0px;
   }
   .preloaded .preload{
     padding-top: 12%;
   }
 .ctabutton{
   width:50%;
-  padding-bottom: 8%;
+  padding-bottom: 5%;
 }
   .subtitle{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.5;
     text-align: left;
