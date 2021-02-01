@@ -18,6 +18,7 @@ body{
   font-family: 'Montserrat', sans-serif;
   color: #001427;
   text-align: justify;
+  overflow-x: hidden;
 }
 .preloaded .afterloaded{
   display: none;
@@ -203,7 +204,7 @@ h1{
   color: #FDCA40;
   background-color: #e8eef2;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: linear-gradient(rgba(255,255,255,.8), rgba(0,20,39,.8)), url("herobck3.jpg");
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -230,7 +231,7 @@ h1{
 
 .head-container{
   margin-left: 8%;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 .heading{
   text-align: justify;
@@ -240,20 +241,19 @@ h1{
 }
 
 .title-content{
-  width:30%;
+  width:35%;
   /* margin-left: 30%; */
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 .event-details{
   color: #FDCA40;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.5;
-
 }
 .ctabutton{
   width:50%;
-  padding-bottom: 16%;
+  padding-bottom: 8%;
 }
 
 .btn1{
@@ -317,12 +317,6 @@ h1{
   height:auto;
 } */
 
-body {
-
-  /* color: #fff; */÷
-  overflow-x: hidden;
-}  /* INTRO SECTION
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .intro-head{
   font-size: 2.3rem;
@@ -976,30 +970,25 @@ time {
 
   #title{
     background-attachment: scroll;
-    height: auto;
   }
   h1{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 900;
 
   }
   .event-details{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .head-container{
-    padding-top: 0px;
+    padding-top: 100px;
   }
   .preloaded .preload{
     padding-top: 12%;
   }
-.ctabutton{
-  width:50%;
-  padding-bottom: 5%;
-}
   .subtitle{
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.5;
     text-align: left;
@@ -1008,7 +997,7 @@ time {
   .title-content{
     width: 40%;
     font-weight: 400;
-    padding-bottom: 20px;
+
   }
   .arrow{
       position: absolute;
