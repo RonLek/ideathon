@@ -965,7 +965,38 @@ time {
     margin-top: 10px;
   }
 }
-
+@media only screen and (min-width: 1440px){
+  #title{
+    background-color: black;
+  }
+  h1{
+    font-size: 5rem;
+  }
+  .event-details{
+    font-size: 1.4rem;
+  }
+  .head-container{
+    padding-top: 150px;
+  }
+  .subtitle{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    width: 40%;
+  }
+  .title-content{
+    width:35%;
+    /* margin-left: 30%; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .ctabutton{
+    width:50%;
+    padding-top: 5%;
+    padding-bottom: 7%;
+  }
+}
 @media only screen and (max-width: 1200px) and (min-width: 768px) {
 
   #title{
@@ -983,9 +1014,6 @@ time {
   }
   .head-container{
     padding-top: 100px;
-  }
-  .preloaded .preload{
-    padding-top: 12%;
   }
   .subtitle{
     font-size: 1.8rem;
