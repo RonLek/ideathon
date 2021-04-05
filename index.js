@@ -1,11 +1,55 @@
+var textString = `
+Welcome to E-Cell IIIT Pune
+......
+Let's get started....
+
+app.load("Hackathon 2k21");
+
+Running the script.........
+
+Loading the website.......
+.........
+........
+.......`;
 
 $(document).ready(function() {
+	const textArray = textString.split('');
+	const textElem = $('.hacking-animation__text');
 
-    setTimeout(function(){
+	let count = 0;
+
+	setInterval(() => {
+			if(textArray[count] === "\n") {
+					textElem.append("<br>");
+			}
+			else {
+					textElem.append(`<span class="hacking-animation__character">${textArray[count]}</span>`);
+			}
+
+			count++;
+			if (count === textArray.length) {
+					count = 0;
+			}
+	}, 30);
+	setTimeout(function(){
         $('body').addClass('loaded');
-        $('h1').css('color','#fdca40');
         AOS.init();
-        (function() {
+				if(screen.height<1000){
+					VANTA.DOTS({
+					  el: "#timeline",
+					  mouseControls: true,
+					  touchControls: true,
+					  gyroControls: false,
+					  minHeight: screen.height*2.00,
+					  minWidth: screen.width-10.00,
+					  scale: 1.00,
+					  scaleMobile: 1.00,
+					  color: 0x2eb323,
+					  color2: 0x3c723c,
+					  backgroundColor: 0x141614
+					})
+				}
+				(function() {
 
           'use strict';
 
@@ -38,6 +82,30 @@ $(document).ready(function() {
           window.addEventListener("scroll", callbackFunc);
 
         })();
-    }, 3000);
 
+
+    }, 4500);
 });
+function updateTimer() {
+future = Date.parse("apr 11, 2021 00:00:00");
+now = new Date();
+diff = future - now;
+
+days = Math.floor(diff / (1000 * 60 * 60 * 24));
+hours = Math.floor(diff / (1000 * 60 * 60));
+mins = Math.floor(diff / (1000 * 60));
+secs = Math.floor(diff / 1000);
+
+d = days;
+h = hours - days * 24;
+m = mins - hours * 60;
+s = secs - mins * 60;
+
+document.getElementById("timer")
+		.innerHTML =
+		'<div>' + d + '<span>days</span></div>' +
+		'<div>' + h + '<span>hours</span></div>' +
+		'<div>' + m + '<span>minutes</span></div>' +
+		'<div>' + s + '<span>seconds</span></div>';
+}
+setInterval('updateTimer()', 1000);
