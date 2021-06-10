@@ -1,4 +1,6 @@
 
+window.location.href = "http://hackathon.ecelliiitp.org/";
+
 $(document).ready(function() {
 
     setTimeout(function(){
